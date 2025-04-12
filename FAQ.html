@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .answer {
+      display: none;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Frequently Asked Questions</h1>
+  <div class="faq-container">
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(this)">Q1: Ye website kis liye hai?</div>
+      <div class="answer">Ye website aapko basic information aur features provide karti hai.</div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(this)">Q2: Kaise contact karein?</div>
+      <div class="answer">Aap contact form ya email ke zariye humse raabta kar sakte hain.</div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer(this)">Q3: Account banana zaroori hai?</div>
+      <div class="answer">Nahi, aap bina account ke bhi site explore kar sakte hain.</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer(element) {
+      const answer = element.nextElementSibling;
+      answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
