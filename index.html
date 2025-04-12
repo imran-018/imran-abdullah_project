@@ -8,21 +8,122 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Welcome to My Web Project</h1>
+        <p>Web Technologies Assignment - Creating a 10 Page Website</p>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for cakes, pastries..." aria-label="Search bakery items">
+            <button id="searchButton" class="search-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                Search
+            </button>
+        </div>
+    </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Additional pages to be added by collaborators -->
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
     </nav>
-
-    <h1>Welcome to My Website</h1>
-    <p>This is my first page for the assignment.</p>
     
-    <img src="images/download.jpg" alt="Sample Image">
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <article>
+                <h2>Delicious Cakes and Bakery Items Delivered to Your Doorstep</h2>
+                <p>Order from 10+ bakries in your area</p>
+                <button class="add-btn">Order Now</button>
+            </article>
+        </section>
+    
+        <!-- Food Categories -->
+        <section class="food-categories">
+            <h2>Popular Categories</h2>
+            <ul class="category-list">
+                <li class="category-item">
+                    <figure>
+                        <img src="images/lavacake.jpg" alt="Lavacake">
+                        <figcaption>Lavacake</figcaption>
+                    </figure>
+                </li>
+                <li class="category-item">
+                    <figure>
+                        <img src="images/creamybiscuits.jpg" alt="CreamyBiscuits">
+                        <figcaption>CreamyBiscuits</figcaption>
+                    </figure>
+                </li>
+                <li class="category-item">
+                    <figure>
+                        <img src="images/Dessert.jpg" alt="Desserts">
+                        <figcaption>Desserts</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+    
+        <!-- Popular Items -->
+        <section class="popular-items">
+            <h2>Most Ordered Right Now</h2>
+            <ol class="item-list">
+                <li class="food-item">
+                    <img src="images/ras.jpg" alt="Rasmalai">
+                    <section class="food-info">
+                        <h4>Rasmalai</h4>
+                        <p class="price">From Rs. 300 per box</p>
+                        <button class="add-btn">Add to Cart</button>
+                    </section>
+                </li>
+                <li class="food-item">
+                    <img src="images/kheer.jpg" alt="Kheer">
+                    <section class="food-info">
+                        <h4>Kheer</h4>
+                        <p class="price">From Rs. 260 per box</p>
+                        <button class="add-btn">Add to Cart</button>
+                    </section>
+                </li>
+                <li class="food-item">
+                    <img src="images/sev.jpeg" alt="Seviyan">
+                    <section class="food-info">
+                        <h4>Seviyan</h4>
+                        <p class="price">From Rs. 290 per box</p>
+                        <button class="add-btn">Add to Cart</button>
+                    </section>
+                </li>
+                <li class="food-item">
+                    <img src="images/pas.jpeg" alt="StrawberryPastry">
+                    <section class="food-info">
+                        <h4>Strawberry Pastry</h4>
+                        <p class="price">From Rs. 260 per box</p>
+                        <button class="add-btn">Add to Cart</button>
+                    </section>
+                </li>
+                <li class="food-item">
+                    <img src="images/pin.jpeg" alt="PineApple Puff Pastry">
+                    <section class="food-info">
+                        <h4>PineApple Puff Pastry</h4>
+                        <p class="price">From Rs. 260 per box</p>
+                        <button class="add-btn">Add to Cart</button>
+                    </section>
+                </li>
+                
+            </ol>
+        </section>
+    </main>
     
     <footer>
-        <p>&copy; 2023 My Website</p>
+        <p>&copy; 2025 @Bakers.com | Created by Imran Hussain</p>
+        <p>GitHub Repository: <a href="https://github.com/imran-018/imran-abdullah_project" style="color: #f1c40f;">imran-abdullah_project</a></p>
     </footer>
 </body>
 </html>
