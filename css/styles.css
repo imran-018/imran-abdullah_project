@@ -308,3 +308,150 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+/* About Page Specific Styles */
+.about-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 1. Hero Section */
+.about-hero {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.about-hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(44, 62, 80, 0.8);
+    color: white;
+    padding: 2rem;
+    border-radius: 0 0 8px 8px;
+}
+
+.hero-text h2 {
+    margin-bottom: 0.5rem;
+}
+
+/* 2. Our Story */
+.our-story {
+    margin: 4rem 0;
+}
+
+.story-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.story-content img {
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.story-text {
+    width: 60%;
+}
+
+.story-text p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* 3. Our Values */
+.our-values {
+    margin: 4rem 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+/* 4. Bakery Process */
+.our-process {
+    margin: 4rem 0;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.step {
+    text-align: center;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.step-number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #f1c40f;
+    color: white;
+    border-radius: 50%;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .story-content {
+        flex-direction: column;
+    }
+    
+    .story-content img,
+    .story-text {
+        width: 100%;
+    }
+    
+    .hero-text {
+        position: static;
+        background: #2c3e50;
+        margin-top: -5px;
+    }
+    
+    .about-hero img {
+        height: 300px;
+    }
+}
