@@ -2,67 +2,148 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Testimonials</title>
+  <title>Testimonials - My Bakery</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
-      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #fffdf9;
     }
-
-    .testimonials {
-      max-width: 900px;
-      margin: auto;
+    header {
+      background-color: #0b2c3d;
+      color: white;
       padding: 20px;
-    }
-
-    .testimonials h2 {
       text-align: center;
-      margin-bottom: 30px;
     }
-
+    nav {
+      background-color: #0e3b53;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #145675;
+    }
+    .content {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
     .testimonial {
-      background: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px #ddd;
     }
-
+    .testimonial h3 {
+      color: #145675;
+    }
     .testimonial p {
-      font-size: 16px;
-      line-height: 1.6;
+      font-style: italic;
     }
-
-    .author {
-      margin-top: 15px;
+    .testimonial span {
+      display: block;
+      margin-top: 10px;
       font-weight: bold;
-      color: #333;
+      color: #e67300;
+    }
+    footer {
+      background-color: #0b2c3d;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    footer div {
+      margin-bottom: 20px;
+    }
+    footer h4 {
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: #ccc;
+      display: block;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+    footer a:hover {
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <div class="testimonials">
-    <h2>What Our Clients Say</h2>
+  <header>
+    <h1>What Our Customers Say</h1>
+    <p>Real Stories from Happy Clients</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </nav>
+
+  <div class="content">
 
     <div class="testimonial">
-      <p>"This service changed the way we run our business. Highly recommended!"</p>
-      <div class="author">– Sarah Khan</div>
+      <h3>“Absolutely Delicious!”</h3>
+      <p>The chocolate cake was to die for! My guests couldn’t stop talking about it. I’ll definitely be ordering again.</p>
+      <span>– Ayesha R., Lahore</span>
     </div>
 
     <div class="testimonial">
-      <p>"Outstanding support and excellent results. I will definitely come back!"</p>
-      <div class="author">– Ahmed Raza</div>
+      <h3>“Best Bakery in Town”</h3>
+      <p>I’ve tried many, but My Bakery stands out with its freshness and flavor. Their croissants are buttery heaven!</p>
+      <span>– Usman K., Karachi</span>
     </div>
 
     <div class="testimonial">
-      <p>"Professional, efficient, and friendly. Couldn't ask for more."</p>
-      <div class="author">– Fatima Ali</div>
+      <h3>“Fast Delivery & Great Taste”</h3>
+      <p>Ordered a surprise cake for my wife’s birthday and it arrived on time — fresh, beautiful, and super tasty!</p>
+      <span>– Sana L., Islamabad</span>
     </div>
+
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=80" alt="Happy Customers" style="width: 100%; border-radius: 10px; margin-top: 30px;">
+
   </div>
+
+  <footer>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: info@mybakery.com</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Location: Main Street, City</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </footer>
 
 </body>
 </html>
