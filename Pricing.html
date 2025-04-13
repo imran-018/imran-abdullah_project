@@ -1,103 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing Plans</title>
+  <meta charset="UTF-8">
+  <title>Pricing - My Bakery</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
-      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #fffaf5;
     }
-    .pricing-section {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .pricing-card {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    header {
+      background-color: #0b2c3d;
+      color: white;
       padding: 20px;
-      width: 280px;
       text-align: center;
     }
-    .pricing-card h2 {
-      color: #333;
+    nav {
+      background-color: #0e3b53;
+      overflow: hidden;
     }
-    .price {
-      font-size: 32px;
-      color: #00b894;
-      margin: 20px 0;
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
     }
-    .features {
-      list-style: none;
-      padding: 0;
-      color: #555;
+    nav a:hover {
+      background-color: #145675;
     }
-    .features li {
+    .content {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .plan {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      text-align: center;
+    }
+    .plan h3 {
+      color: #145675;
+    }
+    .plan p {
       margin: 10px 0;
     }
-    .btn {
-      margin-top: 20px;
-      background: #00b894;
-      color: #fff;
+    .plan .price {
+      font-size: 24px;
+      color: #e67300;
+      margin: 15px 0;
+    }
+    .plan button {
+      background-color: #145675;
+      color: white;
       border: none;
       padding: 10px 20px;
-      border-radius: 25px;
+      border-radius: 6px;
       cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
     }
-    .btn:hover {
-      background: #019875;
+    .plan button:hover {
+      background-color: #0b2c3d;
+    }
+    footer {
+      background-color: #0b2c3d;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    footer div {
+      margin-bottom: 20px;
+    }
+    footer h4 {
+      margin-bottom: 10px;
+    }
+    footer a {
+      color: #ccc;
+      display: block;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+    footer a:hover {
+      color: white;
     }
   </style>
 </head>
 <body>
 
-  <h1 style="text-align:center;">Our Pricing Plans</h1>
+  <header>
+    <h1>Pricing Plans</h1>
+    <p>Delicious treats for every budget!</p>
+  </header>
 
-  <div class="pricing-section">
-    <!-- Basic Plan -->
-    <div class="pricing-card">
-      <h2>Basic</h2>
-      <p class="price">$9/month</p>
-      <ul class="features">
-        <li>1 Website</li>
-        <li>10GB Storage</li>
-        <li>Email Support</li>
-      </ul>
-      <a href="#" class="btn">Choose Plan</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="faq.html">FAQ</a>
+    <a href="blog.html">Blog</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </nav>
+
+  <div class="content">
+
+    <div class="pricing-table">
+      <div class="plan">
+        <h3>Basic Box</h3>
+        <p>6 Assorted Cupcakes</p>
+        <p class="price">Rs. 699</p>
+        <button>Order Now</button>
+      </div>
+      <div class="plan">
+        <h3>Party Pack</h3>
+        <p>12 Pastries + 1 Cake</p>
+        <p class="price">Rs. 1899</p>
+        <button>Order Now</button>
+      </div>
+      <div class="plan">
+        <h3>Premium Bundle</h3>
+        <p>20 Mixed Bakery Items</p>
+        <p class="price">Rs. 2999</p>
+        <button>Order Now</button>
+      </div>
     </div>
 
-    <!-- Standard Plan -->
-    <div class="pricing-card">
-      <h2>Standard</h2>
-      <p class="price">$19/month</p>
-      <ul class="features">
-        <li>10 Websites</li>
-        <li>50GB Storage</li>
-        <li>Priority Support</li>
-      </ul>
-      <a href="#" class="btn">Choose Plan</a>
-    </div>
-
-    <!-- Premium Plan -->
-    <div class="pricing-card">
-      <h2>Premium</h2>
-      <p class="price">$29/month</p>
-      <ul class="features">
-        <li>Unlimited Websites</li>
-        <li>200GB Storage</li>
-        <li>24/7 Support</li>
-      </ul>
-      <a href="#" class="btn">Choose Plan</a>
-    </div>
+    <img src="https://images.unsplash.com/photo-1559622214-53e430fef960?auto=format&fit=crop&w=1000&q=80" alt="Bakery Pricing" style="width: 100%; border-radius: 10px; margin-top: 40px;">
+  
   </div>
+
+  <footer>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="faq.html">FAQ</a>
+      <a href="blog.html">Blog</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Email: info@mybakery.com</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Location: Main Street, City</p>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </footer>
 
 </body>
 </html>
